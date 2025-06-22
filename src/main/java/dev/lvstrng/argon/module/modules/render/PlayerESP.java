@@ -64,7 +64,10 @@ public final class PlayerESP extends Module implements GameRenderListener {
 						MatrixStack matrices = event.matrices;
 						matrices.push();
 						Vec3d vec = cam.getPos();
-						matrices.translate(-vec.x, -vec.y, -vec.z);
+						
+            					event.matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(cam.getPitch()));
+            					event.matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(cam.getYaw() + 180F));
+						event.matrices.translate(-vec.x, -vec.y, -vec.z);
 					}
 
 					double xPos = MathHelper.lerp(RenderTickCounter.ONE.getTickDelta(true), player.prevX, player.getX());
@@ -88,15 +91,11 @@ public final class PlayerESP extends Module implements GameRenderListener {
 				}
 			} else if (mode.isMode(Mode.TwoD)) {
 				if (player != mc.player) {
+					var cam = mc.getBlockEntityRenderDispatcher().camera;
+					event.matrices.push();
+            				event.matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(cam.getPitch()));
+            				event.matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(cam.getYaw() + 180F));
 					renderOutline(player, getColor(alpha.getValueInt()), event.matrices);
-
-					Camera cam = mc.getBlockEntityRenderDispatcher().camera;
-					if (cam != null) {
-						MatrixStack matrices = event.matrices;
-						matrices.push();
-						Vec3d vec = cam.getPos();
-						matrices.translate(-vec.x, -vec.y, -vec.z);
-					}
 
 					if (tracers.getValue())
 						RenderUtils.renderLine(event.matrices, Utils.getMainColor(255, 1), mc.crosshairTarget.getPos(), player.getLerpedPos(RenderTickCounter.ONE.getTickDelta(true)));
