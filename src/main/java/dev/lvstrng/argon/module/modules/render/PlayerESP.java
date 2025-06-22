@@ -20,6 +20,7 @@ import net.minecraft.util.math.Vec3d;
 import org.joml.Matrix4f;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL13;
+import net.minecraft.util.math.RotationAxis;
 
 import java.awt.*;
 
