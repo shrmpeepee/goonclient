@@ -37,8 +37,8 @@ public final class AutoClicker extends Module implements TickListener {
 	}
 
 	public AutoClicker() {
-		super(EncryptedString.of("Auto Clicker"),
-				EncryptedString.of("Automatically clicks for you"),
+		super(EncryptedString.of("Auto Jizzer"),
+				EncryptedString.of("Automatically jizzes for you"),
 				-1,
 				Category.MISC);
 
