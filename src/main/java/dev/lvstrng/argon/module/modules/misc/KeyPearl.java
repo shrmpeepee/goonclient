@@ -25,7 +25,7 @@ public final class KeyPearl extends Module implements TickListener {
     private int clock, previousSlot, switchClock;
 
     public KeyPearl() {
-        super(EncryptedString.of("Key Pearl"), EncryptedString.of("Switches to an ender pearl and throws it when you press a bind"), -1, Category.MISC);
+        super(EncryptedString.of("Keybind Pearl :nerd:"), EncryptedString.of("USELESS SHIT"), -1, Category.MISC);
         addSettings(activateKey, delay, switchBack, switchDelay);
     }
 
