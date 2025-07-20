@@ -31,8 +31,8 @@ public final class StorageEsp extends Module implements GameRenderListener, Pack
 			.setDescription(EncryptedString.of("Draws a line from your player to the storage block"));
 
 	public StorageEsp() {
-		super(EncryptedString.of("Storage ESP"),
-				EncryptedString.of("Renders storage blocks through walls"),
+		super(EncryptedString.of("Item Store Thingy ESP ( Broken cba) "),
+				EncryptedString.of("Renders dih chests"),
 				-1,
 				Category.RENDER);
 		addSettings(donutBypass, alpha, tracers);
