@@ -21,8 +21,8 @@ import net.minecraft.util.math.Vec3d;
 
 public final class CrystalOptimizer extends Module implements PacketSendListener {
 	public CrystalOptimizer() {
-		super(EncryptedString.of("Crystal Optimizer"),
-				EncryptedString.of("Makes your crystals disappear faster client-side so you can place crystals faster"),
+		super(EncryptedString.of("Walksy"),
+				EncryptedString.of("Walksy Optimiser On Steroids"),
 				-1,
 				Category.COMBAT);
 	}
