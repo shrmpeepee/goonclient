@@ -43,7 +43,7 @@ public final class ClickGUI extends Module implements PacketReceiveListener {
 
 	public ClickGUI() {
 		super(EncryptedString.of("Goon"),
-				EncryptedString.of("Settings for the client"),
+				EncryptedString.of("Settings for the Gooners"),
 				GLFW.GLFW_KEY_RIGHT_SHIFT,
 				Category.CLIENT);
 
