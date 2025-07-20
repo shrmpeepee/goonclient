@@ -29,8 +29,8 @@ public final class TargetHud extends Module implements HudListener, PacketSendLi
 	private static final long timeout = 10000;
 
 	public TargetHud() {
-		super(EncryptedString.of("Target HUD"),
-				EncryptedString.of("Gives you information about the enemy player"),
+		super(EncryptedString.of("Target BRUD"),
+				EncryptedString.of("Gives you information about the enemy player and if its a he/him"),
 				-1,
 				Category.RENDER);
 		addSettings(xCoord, yCoord, hudTimeout);
