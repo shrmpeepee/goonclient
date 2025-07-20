@@ -8,8 +8,8 @@ import org.lwjgl.glfw.GLFW;
 
 public final class NoJumpDelay extends Module implements TickListener {
 	public NoJumpDelay() {
-		super(EncryptedString.of("No Jump Delay"),
-				EncryptedString.of("Lets you jump faster, removing the delay"),
+		super(EncryptedString.of("No Bouncing Delay"),
+				EncryptedString.of("Lets you jump faster, removing bouncing balls"),
 				-1,
 				Category.MISC);
 	}
