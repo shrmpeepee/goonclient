@@ -34,7 +34,7 @@ public final class Friends extends Module implements ButtonListener, AttackListe
     private FriendManager manager;
 
     public Friends() {
-        super(EncryptedString.of("Friends"), EncryptedString.of("This module makes it so you can't do certain stuff if you have a player friended!"), -1, Category.CLIENT);
+        super(EncryptedString.of("Minor Friends"), EncryptedString.of("Can ony touch your minor freinds"), -1, Category.CLIENT);
         addSettings(addFriendKey, antiAttack, disableAimAssist, friendStatus);
         setKey(-1);
     }
