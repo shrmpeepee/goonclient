@@ -55,8 +55,8 @@ public final class AutoDoubleHand extends Module implements HudListener {
 	private boolean offhandHasNoTotem;
 
 	public AutoDoubleHand() {
-		super(EncryptedString.of("Auto Double Hand"),
-				EncryptedString.of("Automatically switches to your totem when you're about to pop"),
+		super(EncryptedString.of("Auto Double Goon Hand "),
+				EncryptedString.of("Automatically uses both hands instead of one"),
 				-1,
 				Category.COMBAT);
 		addSettings(stopOnCrystal, checkShield, onPop, onHealth, predict, health, onGround, checkPlayers, distance, predictCrystals, checkAim, checkItems, activatesAbove);
