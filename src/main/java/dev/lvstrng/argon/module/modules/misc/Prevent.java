@@ -27,8 +27,8 @@ public final class Prevent extends Module implements ItemUseListener, AttackList
 			.setDescription(EncryptedString.of("Makes it so you can't click on e-chests with PvP items"));
 
 	public Prevent() {
-		super(EncryptedString.of("Prevent"),
-				EncryptedString.of("Prevents you from certain actions"),
+		super(EncryptedString.of("BadBoy"),
+				EncryptedString.of("Prevents you from being a Bad Boy"),
 				-1,
 				Category.MISC);
 		addSettings(doubleGlowstone, glowstoneMisplace, anchorOnAnchor, obiPunch, echestClick);
