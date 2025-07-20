@@ -18,10 +18,10 @@ import java.awt.*;
 import java.util.List;
 
 public final class HUD extends Module implements HudListener {
-	private static final CharSequence argon = EncryptedString.of("Argon |");
-	private final BooleanSetting info = new BooleanSetting(EncryptedString.of("Info"), true);
-	private final BooleanSetting modules = new BooleanSetting("Modules", true)
-			.setDescription(EncryptedString.of("Renders module array list"));
+	private static final CharSequence argon = EncryptedString.of("GoonClient |");
+	private final BooleanSetting info = new BooleanSetting(EncryptedString.of("Goonfo"), true);
+	private final BooleanSetting modules = new BooleanSetting("Gooduels", true)
+			.setDescription(EncryptedString.of("ArryGoon"));
 
 	public HUD() {
 		super(EncryptedString.of("HUD"),
