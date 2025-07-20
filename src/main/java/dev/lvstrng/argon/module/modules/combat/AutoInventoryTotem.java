@@ -42,8 +42,8 @@ public final class AutoInventoryTotem extends Module implements TickListener {
 	TimerUtils closeTimer = new TimerUtils();
 
 	public AutoInventoryTotem() {
-		super(EncryptedString.of("Auto Inventory Totem"),
-				EncryptedString.of("Automatically equips a totem in your offhand and main hand if empty"),
+		super(EncryptedString.of("Auto Hotbar Max Aura"),
+				EncryptedString.of("Automatically equips the aura totem"),
 				-1,
 				Category.COMBAT);
 		addSettings(mode, delay, hotbar, totemSlot, autoSwitch, forceTotem, autoOpen, stayOpenFor);
