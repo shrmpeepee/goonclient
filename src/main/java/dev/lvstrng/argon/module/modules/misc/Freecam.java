@@ -21,8 +21,8 @@ public final class Freecam extends Module implements TickListener, CameraUpdateL
 	public Vec3d pos;
 
 	public Freecam() {
-		super(EncryptedString.of("Freecam"),
-				EncryptedString.of("Lets you move freely around the world without actually moving"),
+		super(EncryptedString.of("FreeLook At But"),
+				EncryptedString.of("Picture of my ass"),
 				-1,
 				Category.MISC);
 		addSettings(speed);
