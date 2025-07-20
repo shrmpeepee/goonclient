@@ -33,8 +33,8 @@ public final class FakeLag extends Module implements PlayerTickListener, PacketR
 
 	private int delay;
 	public FakeLag() {
-		super(EncryptedString.of("Fake Lag"),
-				EncryptedString.of("Makes it impossible to aim at you by creating a lagging effect"),
+		super(EncryptedString.of("McWifi (Fake)"),
+				EncryptedString.of("Fake ass wifi"),
 				-1,
 				Category.MISC);
 		addSettings(lagDelay, cancelOnElytra);
