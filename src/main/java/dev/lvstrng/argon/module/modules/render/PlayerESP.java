@@ -36,8 +36,8 @@ public final class PlayerESP extends Module implements GameRenderListener {
 			.setDescription(EncryptedString.of("Draws a line from your player to the other"));
 
 	public PlayerESP() {
-		super(EncryptedString.of("Player ESP"),
-				EncryptedString.of("Renders players through walls"),
+		super(EncryptedString.of("Player ESEXSP"),
+				EncryptedString.of("Renders players peniss' through walls"),
 				-1,
 				Category.RENDER);
 		addSettings(alpha, mode, width, tracers);
